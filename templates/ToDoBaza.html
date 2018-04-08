@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block glavna_vsebina %}
+    <h1> Gledamo TODo bazo: </h1>
+
+    {% for Sporocilo in seznam %}
+        <div class="seznam">
+            <tr>
+           {{ Sporocilo.opravilo }}
+                :
+           {{ Sporocilo.avtor }}
+
+            </tr>
+        </div>
+
+    {% endfor %}
+{% endblock %}

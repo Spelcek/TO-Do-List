@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block glavna_vsebina %}
+<h1> Uredi TO-Do </h1>
+
+{% endblock %}
+
+<form method="post" url="">
+    opravilo: <input type="text" id="opravilo" name="opravilo" value="{{ sporocilo.vnos }}"/> <br />
+    avtor: <input type="text" id="avtor" name="avtor" value="{{ sporocilo.avtor }}"/> <br />
+
+    <input type="submit" value="Potrdi" />
+</form>
+

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block glavna_vsebina %}
+<h1> Izbrisi TO-Do Vnos </h1>
+
+{% endblock %}
+
+<form method="post" url="">
+    opravilo: {{ sporocilo.opravilo }} <br />
+    avtor: {{ sporocilo.avtor }} <br />
+
+    <input type="submit" value="Potrdi izbris" />
+
+</form>
